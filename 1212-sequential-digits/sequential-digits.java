@@ -5,7 +5,7 @@ class Solution {
         while(i<9){
             long j=i;
             int x=i+1;
-            while(j<=high && x<=9 && j%10!=0){
+            while(j<=high && x<=9){
                 j=j*10+x;
                 if(j>=low && j<=high) ans.add((int)j);
                 x++;
