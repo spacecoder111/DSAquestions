@@ -3,7 +3,7 @@ class Solution {
     public int peopleAwareOfSecret(int n, int delay, int forget) {
         int dp[]=new int[n+1];
         Arrays.fill(dp,-1);
-        return (int)(solve(1,n,delay,forget,dp)%1000000007);
+        return solve(1,n,delay,forget,dp);
     }
     int solve(int idx,int n,int d,int f,int dp[]){
         if(n<idx) return 1;
