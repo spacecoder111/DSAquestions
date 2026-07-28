@@ -1,5 +1,7 @@
 class Solution {
     public String smallestPalindrome(String s) {
+        if (s.length() < 4) return s;
+        
         int arr[]=new int[26];
         for(char ch:s.toCharArray()){
             arr[(int)(ch-'a')]++;
@@ -26,10 +28,9 @@ class Solution {
                 }
             }
         }
-         StringBuilder ans=new StringBuilder();
-         ans.append(sb.toString());
+         StringBuilder ans=new StringBuilder(sb);
          ans.append(x);
-        ans.append(sb.reverse().toString());
+         ans.append(sb.reverse());
         return ans.toString();
     }
 }
