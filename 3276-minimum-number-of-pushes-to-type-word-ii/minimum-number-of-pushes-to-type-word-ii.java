@@ -31,9 +31,14 @@ class Solution {
                  ans+=max*4;
             }
             c++;
-           // sb.append((char)('a'+idx));
         }
-        
+        return ans;
+    }
+}
+
+
+
+        // sb.append((char)('a'+idx));
         // for(char ch:sb.toString().toCharArray()){
         //     if(set.contains(ch)) continue;
         //     if(c<=7){
@@ -52,6 +57,3 @@ class Solution {
         // for(char ch:word.toCharArray()){
         //     ans+=map.get(ch);
         // }
-        return ans;
-    }
-}
